@@ -1,0 +1,232 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico" type="image/x-icon">
+    <title>Crystal Pay - Sign Up</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">  
+  </head>
+
+  <body>
+    
+    <div class="crystalpay_main">
+
+      <header class="main_header">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-xs-6">
+              <div class="text-left">
+                <div class="custom-logo">
+                  <a href="index"><img src="{% static 'images/logo.svg' %}" alt="logo" width="333" height="60"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-xs-6">
+              <div class="text-right">
+                <div class="navigation_sec navigation_dash_sec hidden-xs">
+                  <nav id="menu-wrap">    
+                    <ul class="list-inline" id="menu">
+                      <li>
+                        <a href="#">
+                          <div class="folder-price">
+                            <img src="{% static 'images/folder-icon.png' %}" alt="Folder" width="47" height="39">
+                            <span class="kes">Kes <span class="amont">2,030.00</span></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#0">
+                          <div class="profileimg01">
+                            <img src="{% static 'images/ic_account_circle_24px.svg' %}" alt="profile" width="56" height="56">
+                            <span class="imgpro_info">
+                              <p class="namepro">Jimnah Njue <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                              <p class="editpro">Edit Profile</p>
+                            </span>
+                          </div>
+                        </a>
+                        <ul class="list-unstyled">
+                          <li><a href="">D374 - Individual</a></li>
+                          <li><a href="">457 - Company</a></li>
+                          <li><a href="">k536 - Individual</a></li>
+                          <li><a href="">k536 - Individual</a></li>
+                          <li><a href="">457 - Company</a></li>
+                        </ul>
+                      </li>
+                      <li class=""><a href="logout" class="btn small">Logout</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="navigation_mob navigation_dash_sec visible-xs">
+                  <ul class="list-inline mob_list_menu">
+                    <li class=""><a href="login"><img src="{% static 'images/folder-icon-mob.png' %}" alt="log" width="56" height="56"></a></li>
+                    <li><a href="#"><img src="{% static 'images/ic_account_circle_24px.svg' %}" alt="profile" width="56" height="56"></a></li>
+                    <li class=""><a href="login"><img src="{% static 'images/log-out-icon.png' %}" alt="log" width="56" height="56"></a></li>
+                    <li><span class="mobilebar" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                      <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <ul class="list-unstyled">
+                          <li><a href="dashboard">
+                            <img src="{% static 'images/humbargericonwh.svg' %}" alt="Dashboard" width="31" height="28" class="normlimg">
+                            <img src="{% static 'images/humbargericongr.svg' %}" alt="Dashboard" width="31" height="28" class="hovrimg">
+                            <span>Dashboard</span>
+                          </a></li>
+                          <li><a href="topup">
+                            <img src="{% static 'images/Path50wh.svg' %}" alt="Topup" width="31" height="26" class="normlimg">
+                            <img src="{% static 'images/Path50gr.svg' %}" alt="Topup" width="31" height="26" class="hovrimg">
+                            <span>Topup</span>
+                          </a></li>
+                          <li><a href="withdrow">
+                            <img src="{% static 'images/Path52wh.svg' %}" alt="Withdraw" width="31" height="26" class="normlimg">
+                            <img src="{% static 'images/Path52gr.svg' %}" alt="Withdraw" width="31" height="26" class="hovrimg">
+                            <span>Withdraw</span>
+                          </a></li>
+                          <li class="active"><a href="send">
+                            <img src="{% static 'images/Path49wh.svg' %}" alt="Send" width="31" height="32" class="normlimg">
+                            <img src="{% static 'images/Path49green.svg' %}" alt="Send" width="31" height="32" class="hovrimg">
+                            <span>Send</span>
+                          </a></li>
+                          <li><a href="invoicing">
+                            <img src="{% static 'images/Path51wh.svg' %}" alt="Invoicing" width="26" height="26" class="normlimg">
+                            <img src="{% static 'images/Path51gr.svg' %}" alt="Invoicing" width="26" height="26" class="hovrimg">
+                            <span>Invoicing</span>
+                          </a></li>
+                          <li><a href="utilities">
+                            <img src="{% static 'images/Path48wh.svg' %}" alt="Utilities" width="21" height="34" class="normlimg">
+                            <img src="{% static 'images/Path48green.svg' %}" alt="Utilities" width="21" height="34" class="hovrimg">
+                            <span>Utilities</span>
+                          </a></li>
+                          <li><a href="reports">
+                            <img src="{% static 'images/copyicon.svg' %}" alt="Reports" width="21" height="25" class="normlimg">
+                            <img src="{% static 'images/copyicongreen.svg' %}" alt="Reports" width="21" height="25" class="hovrimg">
+                            <span>Reports</span>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <body>
+      <section class="main_dashboard">
+        <div class="container">
+          <div class="side_dash_navigation hidden-xs">
+            <ul class="list-unstyled">
+              <li><a href="dashboard">
+                <img src="{% static 'images/humbargericonwh.svg' %}" alt="Dashboard" width="31" height="28" class="normlimg">
+                <img src="{% static 'images/humbargericongr.svg' %}" alt="Dashboard" width="31" height="28" class="hovrimg">
+                <span>Dashboard</span>
+              </a></li>
+              <li><a href="topup">
+                <img src="{% static 'images/Path50wh.svg' %}" alt="Topup" width="31" height="26" class="normlimg">
+                <img src="{% static 'images/Path50gr.svg' %}" alt="Topup" width="31" height="26" class="hovrimg">
+                <span>Topup</span>
+              </a></li>
+              <li><a href="withdrow">
+                <img src="{% static 'images/Path52wh.svg' %}" alt="Withdraw" width="31" height="26" class="normlimg">
+                <img src="{% static 'images/Path52gr.svg' %}" alt="Withdraw" width="31" height="26" class="hovrimg">
+                <span>Withdraw</span>
+              </a></li>
+              <li class="active"><a href="send">
+                <img src="{% static 'images/Path49wh.svg' %}" alt="Send" width="31" height="32" class="normlimg">
+                <img src="{% static 'images/Path49green.svg' %}" alt="Send" width="31" height="32" class="hovrimg">
+                <span>Send</span>
+              </a></li>
+              <li><a href="invoicing">
+                <img src="{% static 'images/Path51wh.svg' %}" alt="Invoicing" width="26" height="26" class="normlimg">
+                <img src="{% static 'images/Path51gr.svg' %}" alt="Invoicing" width="26" height="26" class="hovrimg">
+                <span>Invoicing</span>
+              </a></li>
+              <li><a href="utilities">
+                <img src="{% static 'images/Path48wh.svg' %}" alt="Utilities" width="21" height="34" class="normlimg">
+                <img src="{% static 'images/Path48green.svg' %}" alt="Utilities" width="21" height="34" class="hovrimg">
+                <span>Utilities</span>
+              </a></li>
+              <li><a href="reports">
+                <img src="{% static 'images/copyicon.svg' %}" alt="Reports" width="21" height="25" class="normlimg">
+                <img src="{% static 'images/copyicongreen.svg' %}" alt="Reports" width="21" height="25" class="hovrimg">
+                <span>Reports</span>
+              </a></li>
+            </ul>
+          </div>
+          <div class="rightside_contnt">
+            <div class="topyour_wallet">
+              <h2 class="welcomeheading">Send Money</h2>
+              <p class="welcm_subtitle">Selected Mode: MPESA</p>
+              <div class="send_mony_list">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="paymentgraph">
+                      <ul class="list-unstyled">
+                        <li class="active text-left"><a href="#"><div class="paymnt01"></div> <span>Single Payment</span></a></li>
+                        <li class="text-right"><a href="#"><div class="paymnt01"></div> <span>Bulk Payment</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="paymntform">
+                      <form>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <label>Add one or more Recipient(s)</label>
+                              <input type="number" name="addone" placeholder="Douglas Gicho (+254720000000)">
+                              <a href="#0" class="addcustomr"><img src="{% static 'images/plus.svg' %}" alt="plus" width="15" height="15">Add Customer to Favorite</a>
+                            </div>
+                            <div class="col-sm-6">
+                              <label>Amount</label>
+                              <input class="amnt01" type="number" name="amount" placeholder="Amount">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <label>Transaction Decription</label>
+                              <input type="text" name="Transaction" placeholder="Transaction Description">
+                            </div>
+                            <div class="col-sm-6"></div>
+                          </div>
+                        </div>
+                        <div class="form_sendbtn"><a href="#" class="btn">Send</a></div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="mapesa_use">
+                      <h3>How to use Mpesa</h3>
+                      <ul>
+                        <li>GO to the MPESA menu</li>
+                        <li>select LIPA NA MPESA</li>
+                        <li>select BUY GOODS AND SERVICES</li>
+                        <li>Enter 509545 as Till Number</li>
+                        <li>Enter XXXX as amount</li>
+                        <li>Enter your PIN</li>
+                        <li>Enter the MPESA RECEIPT NUMBER</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+  </body>

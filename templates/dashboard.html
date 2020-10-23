@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Crystal Pay - Sign Up</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">  
+  </head>
+
+  <body>
+    
+    <div class="crystalpay_main">
+
+      <header class="main_header">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-xs-6">
+              <div class="text-left">
+                <div class="custom-logo">
+                  <a href="index"><img src="{% static 'images/logo.svg' %}" alt="logo" width="333" height="60"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-xs-6">
+              <div class="text-right">
+                <div class="navigation_sec navigation_dash_sec hidden-xs">
+                  <nav id="menu-wrap">    
+                    <ul class="list-inline" id="menu">
+                      <li>
+                        <a href="#">
+                          <div class="folder-price">
+                            <img src="{% static 'images/folder-icon.png' %}" alt="Folder" width="47" height="39">
+                            <span class="kes">Kes <span class="amont">2,030.00</span></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#0">
+                          <div class="profileimg01">
+                            <img src="{% static 'images/ic_account_circle_24px.svg' %}" alt="profile" width="56" height="56">
+                            <span class="imgpro_info">
+                              <p class="namepro">{{request.user.first_name}} {{request.user.last_name}} <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                              <p class="editpro">Edit Profile</p>
+                            </span>
+                          </div>
+                        </a>
+                        <ul class="list-unstyled">
+                          <li><a href="userprofile">D374 - Individual</a></li>
+                          <li><a href="">457 - Company</a></li>
+                          <li><a href="">k536 - Individual</a></li>
+                          <li><a href="">k536 - Individual</a></li>
+                          <li><a href="">457 - Company</a></li>
+                        </ul>
+                      </li>
+                      <li class=""><a href="logout" class="btn small">Logout</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="navigation_mob navigation_dash_sec visible-xs">
+                  <ul class="list-inline mob_list_menu">
+                    <li class=""><a href="login"><img src="{% static 'images/folder-icon-mob.png' %}" alt="log" width="56" height="56"></a></li>
+                    <li><a href="#"><img src="{% static 'images/ic_account_circle_24px.svg' %}" alt="profile" width="56" height="56"></a></li>
+                    <li class=""><a href="login"><img src="{% static 'images/log-out-icon.png' %}" alt="log" width="56" height="56"></a></li>
+                    <li><span class="mobilebar" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                      <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <ul class="list-unstyled">
+                          <li class="active"><a href="dashboard">
+                            <img src="{% static 'images/humbargericonwh.svg' %}" alt="Dashboard" width="31" height="28" class="normlimg">
+                            <img src="{% static 'images/humbargericongr.svg' %}" alt="Dashboard" width="31" height="28" class="hovrimg">
+                            <span>Dashboard</span>
+                          </a></li>
+                          <li><a href="topup">
+                            <img src="{% static 'images/Path50wh.svg' %}" alt="Topup" width="31" height="26" class="normlimg">
+                            <img src="{% static 'images/Path50gr.svg' %}" alt="Topup" width="31" height="26" class="hovrimg">
+                            <span>Topup</span>
+                          </a></li>
+                          <li><a href="withdrow">
+                            <img src="{% static 'images/Path52wh.svg' %}" alt="Withdraw" width="31" height="26" class="normlimg">
+                            <img src="{% static 'images/Path52gr.svg' %}" alt="Withdraw" width="31" height="26" class="hovrimg">
+                            <span>Withdraw</span>
+                          </a></li>
+                          <li><a href="send">
+                            <img src="{% static 'images/Path49wh.svg' %}" alt="Send" width="31" height="32" class="normlimg">
+                            <img src="{% static 'images/Path49green.svg' %}" alt="Send" width="31" height="32" class="hovrimg">
+                            <span>Send</span>
+                          </a></li>
+                          <li><a href="invoicing">
+                            <img src="{% static 'images/Path51wh.svg' %}" alt="Invoicing" width="26" height="26" class="normlimg">
+                            <img src="{% static 'images/Path51gr.svg' %}" alt="Invoicing" width="26" height="26" class="hovrimg">
+                            <span>Invoicing</span>
+                          </a></li>
+                          <li><a href="utilities">
+                            <img src="{% static 'images/Path48wh.svg' %}" alt="Utilities" width="21" height="34" class="normlimg">
+                            <img src="{% static 'images/Path48green.svg' %}" alt="Utilities" width="21" height="34" class="hovrimg">
+                            <span>Utilities</span>
+                          </a></li>
+                          <li><a href="reports">
+                            <img src="{% static 'images/copyicon.svg' %}" alt="Reports" width="21" height="25" class="normlimg">
+                            <img src="{% static 'images/copyicongreen.svg' %}" alt="Reports" width="21" height="25" class="hovrimg">
+                            <span>Reports</span>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="main_dashboard">
+        <div class="container">
+          <div class="side_dash_navigation hidden-xs">
+            <ul class="list-unstyled">
+              <li class="active"><a href="dashboard">
+                <img src="{% static 'images/humbargericonwh.svg' %}" alt="Dashboard" width="31" height="28" class="normlimg">
+                <img src="{% static 'images/humbargericongr.svg' %}" alt="Dashboard" width="31" height="28" class="hovrimg">
+                <span>Dashboard</span>
+              </a></li>
+              <li><a href="topup">
+                <img src="{% static 'images/Path50wh.svg' %}" alt="Topup" width="31" height="26" class="normlimg">
+                <img src="{% static 'images/Path50gr.svg' %}" alt="Topup" width="31" height="26" class="hovrimg">
+                <span>Topup</span>
+              </a></li>
+              <li><a href="withdrow">
+                <img src="{% static 'images/Path52wh.svg' %}" alt="Withdraw" width="31" height="26" class="normlimg">
+                <img src="{% static 'images/Path52gr.svg' %}" alt="Withdraw" width="31" height="26" class="hovrimg">
+                <span>Withdraw</span>
+              </a></li>
+              <li><a href="send">
+                <img src="{% static 'images/Path49wh.svg' %}" alt="Send" width="31" height="32" class="normlimg">
+                <img src="{% static 'images/Path49green.svg' %}" alt="Send" width="31" height="32" class="hovrimg">
+                <span>Send</span>
+              </a></li>
+              <li><a href="invoicing">
+                <img src="{% static 'images/Path51wh.svg' %}" alt="Invoicing" width="26" height="26" class="normlimg">
+                <img src="{% static 'images/Path51gr.svg' %}" alt="Invoicing" width="26" height="26" class="hovrimg">
+                <span>Invoicing</span>
+              </a></li>
+              <li><a href="utilities">
+                <img src="{% static 'images/Path48wh.svg' %}" alt="Utilities" width="21" height="34" class="normlimg">
+                <img src="{% static 'images/Path48green.svg' %}" alt="Utilities" width="21" height="34" class="hovrimg">
+                <span>Utilities</span>
+              </a></li>
+              <li><a href="reports">
+                <img src="{% static 'images/copyicon.svg' %}" alt="Reports" width="21" height="25" class="normlimg">
+                <img src="{% static 'images/copyicongreen.svg' %}" alt="Reports" width="21" height="25" class="hovrimg">
+                <span>Reports</span>
+              </a></li>
+            </ul>
+          </div>
+          <div class="rightside_contnt">
+            <div class="welcome_wallet">
+              <h2 class="welcomeheading">Welcome to your wallet, Jimnah!</h2>
+              <div class="whatdo_want">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <div class="img01">
+                      <img src="{% static 'images/wallet.svg' %}" alt="wallet" width="157" height="180">
+                    </div>
+                  </div>
+                  <div class="col-xs-9">
+                    <div class="txt01">
+                      <h3>What do you want to do?</h3>
+                      <ul class="list-unstyled utility_list">
+                        <li><a href="utilities">
+                          <img src="{% static 'images/Path 48.svg' %}" alt="Pay Utility Bills" width="28" height="45">
+                          <span>Pay Utility Bills?</span>
+                        </a></li>
+                        <li><a href="send">
+                          <img src="{% static 'images/Path 49.svg' %}" alt="Send & Receive Money" width="39" height="39">
+                          <span>Send & Receive Money?</span>
+                        </a></li>
+                        <li><a href="topup">
+                          <img src="{% static 'images/Path 50.svg' %}" alt="Top Up Wallet" width="37" height="30">
+                          <span>Top Up Wallet?</span>
+                        </a></li>
+                        <li><a href="invoicing">
+                          <img src="{% static 'images/Path 51.svg' %}" alt="Manage your Invoices" width="36" height="36">
+                          <span>Manage your Invoices?</span>
+                        </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- <script .src="{% static 'js/jquery.min.js' %}"></script> -->
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+
+
+@media (min-width: 1500px) {
+
+section.signup_section { height: 100vh;}
+.navigation_sec { font-size: 18px;}
+.custom-logo a img { max-width: 300px; width: 100%; height: auto;}
+.side_dash_navigation { font-size: 18px;}
+
+
+}
+
+
+
+
+
+@media (max-width: 1500px) {
+
+.container { padding: 0 60px;}
+.navigation_sec { padding: 25px 0px; font-size: 16px;}
+.btn { font-size: 16px; width: 115px; height: 35px;}
+.custom-logo img { width: 100%; height: auto; max-width: 265px;}
+.custom-logo { padding: 18px 0px;}
+.effeciantbox { max-width: 980px; margin: auto;}
+.effeciantbox h1 { font-size: 38px; margin-bottom: 25px;}
+body { font-size: 16px; line-height: 26px;}
+.signup-free { width: 235px; height: 58px; font-size: 18px;}
+.signup-free-btn { padding-top: 25px;}
+.weglad h2 { font-size: 45px; padding-bottom: 20%; padding-top: 18%;}
+.svgicon img { width: 100%; height: auto; max-width: 35px;}
+.signup_form input { padding: 5px 12px; font-size: 14px;}
+.signup_form h3 { font-size: 26px; margin: 8px 0;}
+a.registr_go { font-size: 16px; height: 50px;}
+.securlist ul li { padding: 0 30px; font-size: 16px;}
+.container_signup { padding-left: 22px; font-size: 14px;}
+.signup_form { padding: 30px;}
+.weglad-login h2 { padding-bottom: 10%; padding-top: 0;}
+.weglad-login .securlist { padding-bottom: 10%;}
+
+}
+ 
+
+
+
+
+@media (max-width: 1199px) and (min-width: 992px) {
+
+.custom-logo img { max-width: 215px;}
+.navigation_sec { padding: 20px 0px; font-size: 15px;}
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+.container { padding: 0 40px;}
+.custom-logo img { max-width: 175px;}
+.navigation_sec { font-size: 15px; padding: 18px 0px;}
+.navigation_sec ul li { padding: 0 0 0 20px;}
+.navigation_sec ul li:last-child { padding: 0 0 0 10px;}
+.btn { font-size: 15px; width: 95px; height: 30px;}
+section.signup_section { height: auto; padding: 60px 0;}
+body .signup01box { padding-top: 60px;}
+.weglad h2 { font-size: 30px;}
+.social_icons01 ul li img { max-width: 36px;}
+.social_icons01 ul li { padding: 0 7px;}
+.svgicon img { max-width: 25px;}
+.securlist ul li { padding: 0 15px;}
+.securlist { padding-bottom: 8%;}
+.side_dash_navigation ul li a { padding: 15px 0; font-size: 14px;}
+.side_dash_navigation ul li img { max-width: 15px;}
+.profileimg01 img { max-width: 41px;}
+.navigation_sec ul#menu li { padding: 0 0 0 15px;}
+.folder-price span.kes { font-size: 15px;}
+.folder-price img { max-width: 25px;}
+body .navigation_dash_sec { padding: 3px 0px;}
+.side_dash_navigation { top: 65px; padding: 15px;}
+.icon01 img { max-height: 34px; height: auto; width: auto;}
+.mapesa_use { margin-top: 35px;}
+.send_mony_list02 { padding-top: 10px;}
+.mapesa_use02 { margin-bottom: 35px;}
+.buytabs01 ul.nav li a span { display: none;}
+
+
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+.container { padding: 0 30px;}
+.custom-logo img { max-width: 195px;}
+.effeciantbox { padding-top: 50px;}
+.effeciantbox h1 { font-size: 30px;}
+.signup-free { width: 205px; height: 50px; font-size: 16px;}
+.rowflex { display: block; }
+section.signup_section { height: auto; padding: 60px 0;}
+.weglad h2 { font-size: 30px;}
+.social_icons01 ul li img { max-width: 30px;}
+.social_icons01 ul li { padding: 0 7px;}
+.svgicon img { max-width: 25px;}
+.securlist ul li { padding: 0 15px;}
+.securlist { padding-bottom: 6%;}
+.signup_form { margin-top: 45px;}
+a.btn.small { font-size: 13px; width: 80px; height: 28px;}
+body .navigation_dash_sec ul li:last-child { padding-left: 4px;}
+body .navigation_dash_sec { padding: 17px 0px;}
+.navigation_dash_sec ul li span.mobilebar { margin-top: 0px; vertical-align: middle;}
+ul.mob_list_menu li a img { width: 100%; height: auto; max-width: 20px;}
+.rightside_contnt { width: 100%;}
+.welcome_wallet { padding: 3% 0% 5% 0%;}\
+.whatdo_want .txt01 { padding-top: 10%;}
+.mapesa_use { margin-top: 35px;}
+.send_mony_list02 { padding-top: 10px;}
+.mapesa_use02 { margin-bottom: 35px;}
+.sidenav ul.list-unstyled li img { margin-right: 11px;}
+.sidenav ul.list-unstyled li img.hovrimg { display: none;}
+.sidenav ul.list-unstyled li.active a { color: #a5d37c;}
+.sidenav ul.list-unstyled li.active img.normlimg { display: none;}
+.sidenav ul.list-unstyled li.active img.hovrimg { display: inline-block;}
+.icon01 img { max-height: 34px; height: auto; width: auto;}
+.invoice_search form input { margin-bottom: 15px;}
+.buytabs01 ul.nav li a span { display: none;}
+.withdrawal-wrep { 
+  padding: 50px 0;
+}
+.checkmark-2 {
+    position: absolute;
+    top: 6px;
+  }
+
+.form_sendbtn-2 {
+    margin-top: 14px;
+}
+.redio-list2 {
+  padding: 3px 0 0;
+}
+.rightside-5 .select_provider h4 {
+  font: normal normal bold 16px/26px Roboto;  
+}
+.send_mony_list {
+    padding-top: 9px;
+}
+.paymntform-2 {
+  padding-top: 0;
+}
+.them-btn-2 {    
+    padding: 10px 35px;
+    font-size: 13px !important;
+}
+.form_sendbtn {
+  margin-top: 14px;
+}
+.invoicetable_inner td.text-center {
+  text-align: left !important;
+}
+.main_dashboard .col-sm-4 a.btn.searchbtnfo {
+    margin-top: 14px;
+}
+}
+
+
+
+
+
+@media (max-width: 479px) {
+
+.container { padding: 0 15px;}
+.custom-logo img { max-width: 148px;}
+.transferlist ul li { border-right: 0; text-align: center !important; width: 100% !important;}
+.withdrawal {
+    padding-bottom: 33px;
+}
+.withdrawal img {
+    width: 50px;
+}
+.rightside-info h2 {
+    font: normal normal normal 27px/30px Roboto;
+    letter-spacing: 0px;
+    color: #A5D37C;
+    opacity: 1;
+    padding-bottom: 16px;
+}
+.rightside-info p {
+  font: normal normal normal 14px/19px Roboto;    
+  opacity: 1;
+}
+.main_dashboard .them-btn {
+  font: normal normal normal 14px/18px Roboto;    
+  min-width: 121px;
+  height: 37px;    
+  padding: 10px 28px;
+}
+.redio-list2 .checkmark-2:after {
+  top: 1px;
+  left: 1px;
+  width: 7px;
+  height: 7px;    
+}
+
+
+.checkmark-2 {    
+  height: 13px;
+  width: 13px;
+}
+.redio-list2 label {
+  font-size: 18px;
+  padding-left: 20px;
+}
+.select_provider ul.list-inline li {
+    padding: 0px 2px;
+}
+.paymntform .redio-list2 label {
+    font-size: 12px;
+}
+
+}
+
+
+
+
+
+
+

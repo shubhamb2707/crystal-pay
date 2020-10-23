@@ -1,0 +1,144 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{% static  'images/favicon.ico" type="image/x-icon">
+    <title>Crystal Pay - Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">  
+  </head> -->
+
+  <body>
+<!--     
+    <div class="crystalpay_main">
+
+      <header class="main_header">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-xs-9">
+              <div class="text-left">
+                <div class="custom-logo">
+                  <a href="index.html"><img src="{% static  'images/logo.svg' %}" alt="logo" width="333" height="60"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-xs-3">
+              <div class="text-right">
+                <div class="navigation_sec hidden-xs">
+                  <ul class="list-inline">
+                    <li><a href="#">Transfer Money</a></li>
+                    <li><a href="#">Pay Online</a></li>
+                    <li><a href="login.html" class="btn small">Login</a></li>
+                    <li class="active"><a href="sign-up.html" class="btn small">Register</a></li>
+                  </ul>
+                </div>
+                <div class="navigation_mob visible-xs">
+                  <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Transfer Money</a></li>
+                      <li><a href="#">Pay Online</a></li>
+                      <li><a href="login.html">Login</a></li>
+                      <li><a href="sign-up.html">Register</a></li>
+                    </ul>
+                  </div>
+                  <span class="mobilebar" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header> -->
+
+      <section class="main_home_section signup_section">
+        <div class="container">
+          <div class="effeciantbox signup01box">
+            <div class="row rowflex">
+              <div class="col-md-7 col-sm-6 text-left">
+                <div class="weglad weglad-login">
+                  <h2>We are glad</h2>
+                  <div class="securlist">
+                    <ul class="list-inline">
+                      <li>
+                        <div class="svgicon"><img src="{% static  'images/fast.svg' %}" alt="Fast" width="48" height="48"></div>
+                        <span>Fast</span>
+                      </li>
+                      <li>
+                        <div class="svgicon"><img src="{% static  'images/secure.svg' %}" alt="Secure" width="48" height="48"></div>
+                        <span>Secure</span>
+                      </li>
+                      <li>
+                        <div class="svgicon"><img src="{% static  'images/efficient.svg' %}" alt="Efficient" width="48" height="48"></div>
+                        <span>Efficient</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="social_icons01">
+                    <ul class="list-inline">
+                      <li><a href="#"><img src="{% static  'images/Facebook.svg' %}" alt="Facebook" width="48" height="48"></a></li>
+                      <li><a href="#"><img src="{% static  'images/Youtube.svg' %}" alt="Youtube" width="48" height="48"></a></li>
+                      <li><a href="#"><img src="{% static  'images/twitter.svg' %}" alt="Twitter" width="48" height="48"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-6">
+                <div class="signup_form">
+                  <h3>Login</h3>
+                  <div class="alredy_ac"><a href="#">Don't have an account?</a> <a class="loginlink" href="signup">Register</a></div>
+                  <form action="{% url 'login' %}" method='POST'>
+                    <p style="color:black">{{message}}</p>
+                    {% csrf_token %}
+                    <div class="registerspace">
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-xs-12" >
+                            <input type="email" name="email" placeholder="Email" style="color:black ;">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="form-group">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <input type="text" name="phone-number" placeholder="Phone Number" style="color:black ;">
+                          </div>
+                        </div>
+                      </div> -->
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <input type="password" name="password" placeholder="Password" style="color:black ;> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="registrnow_go">
+                      <input type="submit" class="btn registr_go" value="Sign In">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script> -->
+  </body>
+  {% endblock %}
+</html>
